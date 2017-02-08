@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>myLunchBox</title>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+
+<body>
+<!-- whole body div-->
+<div class="body">
+<!--l ogo and navagation bar --> 
+<div class="nav"> 
+		<div class ="logo">
+			<a href="homepage.html"><img src="mylunchbox.png" alt="Logo"></a>
+		</div>
+			<ul class="right">
+				<li><a class="navlink" href="#">login</a></li>
+				<li><a class="navlink active" href="#">sign up</a></li>
+				<li><a class="navlink" href="#">about</a></li>
+			</ul>		
+</div>
+
+<!-- stock photo div -->
+<div class="sign">
+			
+			<!-- sign up div -->
+			<div class="signup">
+
+			<div class="signup1">
+			<h2> Welcome to my Lunch Box Registration Form</h2>
+			<h3> Please fill in all required feild marked with * </h3>
+			<form>
+
+			<!-- personal information --> 
+			<h4> Personal Information </h4>
+				<table>
+				<!-- first name -->
+				<tr> 
+					<th>
+					<label>* First Name :</label>
+					</th>
+					<td>
+					<input class="form" name="fisrtName" type="text" required pattern="[A-Za-z]*" placeholder="Only letters are accepted"/>
+					</td>
+				
+				<!-- last name -->
+				
+					<th>
+					<label>* Last Name :</label>
+					</th>
+					<td>
+					<input class="form" name="lastName" type="text" required pattern="[A-Za-z]*" placeholder="Only letters are accepted"/>
+					</td>
+				</tr>
+				<!-- email -->
+				<tr>
+					<th>
+					<label>* Email Address :</label>
+					</th>
+					<td>
+					<input class="form" name="email" type="email"   placeholder="example@exmapl.example" required/>
+					</td>
+
+				<!-- phone number -->
+
+					<th>
+					<label>* Phone Number :</label>
+					</th>
+					<td>
+					<input class="form" name="phonenumber" type="text" placeholder="000-000-0000" required/>
+					</td>
+				</tr>
+				<!-- password/confirmation name -->
+				<tr>
+					<th>
+					<label>* Password :</label>
+					</th>
+					<td>
+					<input class="form" name="password" type="password" placeholder="************" required/>
+					</td>
+				
+					<th>
+					<label>* Confirm Password :</label>
+					</th>
+					<td>
+					<input class="form" name="passwordConfirm" type="password" placeholder="************" required/>
+					</td>
+				</tr>
+				
+				
+			</table>
+
+			<!-- billing information --> 
+			<h4> Billing Information </h4>
+
+			<table>
+
+			<!-- street number -->
+				<tr>
+					<th>
+					<label>* Street Number :</label>
+					</th>
+					<td>
+					<input class="form" name="number" type="text"  placeholder="Only digits are  accepted" required/>
+					</td>
+			
+			<!-- street address -->
+			
+					<th>
+					<label>* Street Name :</label>
+					</th>
+					<td>
+					<input class="form" name="name" type="text" pattern="[A-Za-z ]*"  placeholder="Only letters and spaces are  accepted" required/>
+					</td>
+				</tr>
+
+				<!-- apt Number -->
+				<tr>
+					<th>
+					<label> Apartment Number :</label>
+					</th>
+					<td>
+					<input class="form" name="aptnumber" type="number" placeholder="Only digits are  accepted"/>
+					</td>
+				
+
+			<!-- postal code -->
+				
+					<th>
+					<label>* Postal Code :</label>
+					</th>
+					<td>
+					<input class="form" name="name" type="text" pattern="[A-Za-z0-9]*" placeholder="Only letters and digits are  accepted" required/>
+					</td>
+				</tr>
+
+				<!-- city -->
+				<tr>
+					<th>
+					<label>* City :</label>
+					</th>
+					<td>
+					<input class="form" name="name" type="text" pattern="[A-Za-z]*" placeholder="Only letters is accepted" required/>
+					</td>
+				
+				<!-- province -->
+				
+					<th>
+					<label>* Province:</label>
+					</th>
+					<td>
+					<select>
+							<option value="school">--- SELECT ---</option>
+  							<option value="Alberta">Alberta</option>
+  							<option value="British Columbia">British Columbia</option>
+  							<option value="Manitoba">Manitoba</option>
+  							<option value="New Brunswick">New Brunswick</option>
+  							<option value="Newfoundland">Newfoundland</option>
+  							<option value="Nova Scotia">Nova Scotia</option>
+  							<option value="Ontario">Ontario</option>
+  							<option value="Prince Edward Island">Prince Edward Island</option>
+  							<option value="Quebec">Quebec</option>
+  							<option value="Saskatchewan">Saskatchewan</option>
+					</select>
+					</td>
+				</tr>
+			</table>
+
+			
+
+			<!-- button  -->
+			<table>
+			<tr> 
+					<button class="signButton">Join the Family =) </button>	
+			</tr>		
+			</table>
+
+			</form>
+		
+			</div>
+			</div>
+</div>
+
+
+
+
+<footer>
+<!-- footer div -->
+
+		<div class="footer">
+		<img src="A+.png" alt="a" class="aplus">
+			<table class="tiny1">
+				<tr>
+					<th class="f"><a href="#"> HOME </a></th>
+					<th class="f"><a href="#"> FAQ</a></th>
+					<th class="f"><a href="#"> POLICY</a></th>
+					<th class="f"><a href="#"> CONTACT US</a></th>
+
+				</tr>
+			</table>
+			
+		</div>
+	
+		<div class="tinyfooter">
+			<table class="tiny">
+				<tr>
+					<th><img  src="facebook1.png" alt="facebook"></th>
+					<th><img  src="twitter1.png" alt="twitter"></th>
+					<th><img  src="g+1.png" alt="g"></th>
+					<th><img  src="youtube1.png" alt="youtube"></th>
+				</tr>
+			</table>
+		</div>
+
+</footer>
+
+</div>
+
+</body>
+
+
+</html>

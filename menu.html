@@ -1,0 +1,580 @@
+<!doctype html>
+<html>
+    <head>
+	<!-- BootStrap -->
+			<!-- Plugin CSS -->
+		<link rel="stylesheet" href="css/animate.min.css" type="text/css">
+		<!-- Custom CSS -->
+		<!-- <link rel="stylesheet" href="css/creative.css" type="text/css"> -->
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<!-- Custom Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+		
+        <title>WEBSITE</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+
+        <style>
+            .nav
+            {
+                box-shadow: 0 1px 0 white;
+                border-bottom: thin solid #6C504D;
+            }
+            div, aside,ul
+            {
+                box-sizing: content-box;
+            }
+            input
+            {
+                padding:1% !important;
+                font-size: initial !important;
+            }
+            body{
+                margin:0;
+                background: url("sign.jpg") fixed;
+                color:#6C504D;
+            }
+            main
+            {
+                padding-top: 120px;
+                padding-bottom: 50px;
+                overflow:auto;
+            }
+            main aside
+            {
+                float:left;
+                width: 20%;
+                margin-right:1%;
+                margin-left: 1%;
+                background-image: url("footer1.jpg");
+                border: thin solid #6C504D;
+                padding:1%;
+                box-shadow:0 1px 0 white;
+            }
+            .date
+            {
+
+                text-align: right;
+                padding-right: 1%;
+            }
+            main .boxList
+            {
+                float:left;
+                width:73%;
+                background-image: url("footer1.jpg");
+                border: thin solid #6C504D;
+                padding: .5%;
+                box-shadow:0 1px 0 white;
+            }
+            .subBoxList
+            {
+                margin-bottom:10%;
+            }
+            main .subBoxList h2
+            {
+                border-bottom: thin solid silver;
+            }
+            .boxes
+            {
+                overflow: auto;
+                margin-left:1%;
+            }
+            .m_list
+            {
+                margin:0 auto;
+                width: 80%;
+                margin-bottom: 10px;
+                font-family: "Candara";
+            }
+            a
+            {
+                color:black;
+            }
+            .element
+            {
+                min-height: 240px;
+                width:240px;
+                float:left;
+                margin-right: .6%;
+                margin-bottom: 1%;
+                background: darkgrey;
+                cursor: pointer;
+                border: thin solid #DAD1C6;
+            }
+            .element:hover
+            {
+                border:thin solid #6C504D;
+            }
+            .boxes
+            {
+                margin: 0 auto;
+                width: 80%;
+            }
+            aside ul li.menu
+            {
+                text-decoration: none !important;
+                display:block!important;
+                clear: both!important;
+                float: none!important;
+                width: 100%;
+                font-size: medium !important;
+                margin-bottom:3px;
+
+            }
+            aside ul li.menu a
+            {
+                width:100%;
+                display: block;
+                text-align: center;
+                border-bottom: thin dashed #DAD1C6;
+                padding: 1%;
+            }
+            aside ul li.menu a:hover
+            {
+                border-bottom: thin dashed #6C504D;
+                color: #6C504D;
+            }
+            .alert-
+            {
+                display:none;
+				z-index:100000000;
+                position:fixed;
+                top:0;
+                left:0;
+                height:100%;
+                width:100%;
+            }
+            .darkbg
+            {
+                background:black;
+                opacity: .75;
+                filter: alpha(opacity=75);
+                position:fixed;
+                width:100%;
+                height:100%;
+            }
+            .form-alert-o
+            {
+                width:100%;
+
+                z-index: 1000;
+            }
+            .inner
+            {
+                z-index: 10000;
+                //position:fixed;
+                background: white;
+                //top:40%;
+                //left: 40%;
+                min-width: 300px;
+                //border-radius: 10px;
+                padding: 10px;
+            }
+            .form-alert-o input, .form-alert-o select
+            {
+                display: block;
+                width: 99%;
+                padding: 1% !important;
+                margin-bottom: 2%;
+                font-size: medium;
+                border-radius:0 !important;
+            }
+            input[name=student_name]
+            {
+                width:96.7%;
+            }
+            label
+            {
+                display:none;
+            }
+
+            .form-alert-o select, input[type=submit]
+            {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                padding: 1%;
+            }
+            input[type=submit]
+            {
+                border:none;
+            }
+            //[id^=order]:after
+            {
+                content: "[\e014]";
+                padding-left: 10px;
+                color:red;
+            }
+            h4
+            {
+                text-decoration: none!important;
+            }
+            a[href="checkout.php?"]
+            {
+                padding:2%;
+                background: #6C504D;
+                color:white;
+                font-weight:bold;
+                border-radius: 5px;
+                width: 60%;
+                display: block;
+                margin:100px auto 0 auto;
+
+                text-align: center;
+            }
+            a[href="checkout.php?"]:hover
+            {
+                text-decoration: underline;
+                font-style: italic;
+                background: #d1a477;
+
+            }
+            #success_add
+            {
+                display: none;
+                background: lightgreen;
+                position:fixed;
+                bottom:40%;
+                left:0;
+                font-size: medium;
+                font-family: tahoma;
+                padding:2% !important;
+                color:darkgreen;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border: thin solid darkgreen;
+                //height:24px !important;
+            }
+            #success_add span:before
+            {
+                content: "\e013";
+            }
+            .error-field
+            {
+                color:red;
+                border-color: red;
+            }
+			
+		.portfolio-box {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			max-width: 240px;
+		}
+
+		.portfolio-box .portfolio-box-caption {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			color: #fff;
+			opacity: 0;
+			background: rgba(240,95,64,.9);
+			-webkit-transition: all .35s;
+			-moz-transition: all .35s;
+			transition: all .35s;
+		}
+
+		.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			transform: translateY(-50%);
+		}
+
+		.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+		.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+			padding: 0 15px;
+			font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+		}
+
+		.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 600;
+		}
+
+		.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+			font-size: 18px;
+		}
+
+		.portfolio-box:hover .portfolio-box-caption {
+			opacity: 1;
+		}
+
+		@media(min-width:768px) {
+			.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+				font-size: 16px;
+			}
+
+			.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+				font-size: 22px;
+			}
+		}
+		
+		.col-lg-4, .col-sm-6{
+			padding: 0px; !important
+		}
+        </style>
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="jquery-ui-1.9.2.custom.min.js"></script>
+        <script>
+            Obj ={};
+            Obj.x='';
+            Obj.y='';
+            function fillForm(x,id){
+                x.x=document.getElementById(id).innerText;
+                x.y=id;
+                $(".nav").css('z-index','-1');
+                $("input[name=submit]").prop("disabled",false);
+                $(".alert-").fadeIn('slow');
+                $(".form-alert-o h4").text('Order: '+ $("#"+id).text());
+            }
+            $(document).ready(function(){
+
+
+
+                $(".darkbg").click(function(){
+                    $(".alert-").fadeOut('slow', function(){
+                        $(".nav").css('z-index','10');
+                    });
+                    Obj.x='';
+                    Obj.y='';
+                    $(".form-alert-o h4").text('');
+
+
+
+                });
+
+                $(".element").click(function(){
+                    fillForm(Obj,$(this).attr('id'));
+                });
+                $("[name=school_name]").change(function(){
+                    $(this).removeClass("error-field");
+                });
+
+                $("#OrderAdd").submit(function(event){
+                    event.preventDefault();
+                    $school_name=$("[name=school_name]");
+                    $school_name.removeClass("error-field");
+                    if ($school_name.val()==null)
+                    {
+                        $school_name.addClass("error-field");
+                        return;
+                    }
+                    //
+                    // AJAX HERE
+                    //
+                    $.post('ajax_helper.php?action=add',{
+                        student_name: '',
+                        school_name: '',
+                        date: $("input[type=date]").val(),
+                        box_id: Obj.y
+                    }).done(function(data){
+                        eval(data);
+                            });
+                    //
+                    //  AJAX ENDS HERE
+                    //
+
+                    $(".order_list").append('<li id="order2" class="menu"><a href="#">ORDER [<span style="color:red">X</span>]</a></li>');
+                    $("#success_add").toggle( "slide" );
+                    setTimeout(function(){$("#success_add").toggle( "slide" );},1500);
+                    $(".darkbg").click();
+                    $("input[type=text]").val('');
+                    $("select").val('0');
+                });
+
+                $("input[name=date]").change(function(){
+                    $.get('ajax_helper.php?action.php=show&&t='+$("input[name=date]").val(),function(data){
+                        eval(data);
+                    })
+                });
+
+                $(document).keyup(function(e) {
+                    if (e.keyCode == 27) { // escape key maps to keycode `27`
+                        $(".darkbg").click();
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="alert-">
+
+            <div class="form-alert-o">
+                <div class="inner">
+                    <h4>&nbsp;</h4>
+                    <form id="OrderAdd">
+                        <label for="student_name"></label>
+                        <input type="text" id="student_name" placeholder="Student Full Name" name="student_name" pattern="([A-Za-z]+\s*)*" required/>
+                        <label for="school_name"></label>
+                        <select id="school_name" name="school_name" required>
+                            <option value="0" disabled selected>School Name</option>
+                            <option value="1">school</option>
+                            <option value="2">School</option>
+                        </select>
+                        <input name="submit" type="submit" value="Add Box" disabled>
+                    </form>
+
+                </div></div>
+            <div class="darkbg">&nbsp;</div>
+        </div>
+
+        <div id="success_add">
+            <span>Box has been successfully added!</span>
+        </div>
+
+        <header>
+
+
+            <div class="nav">
+                <div class="logo">
+                    <a href="homepage.html"><img src="mylunchbox.png" alt="Logo"></a>
+                </div>
+                <ul class="right">
+                    <li><a class="navlink" href="#">login</a></li>
+                    <li><a class="navlink" href="signup.html">sign up</a></li>
+                    <li><a class="navlink" href="#">about</a></li>
+                </ul>
+            </div>
+
+
+
+        </header>
+        <main>
+
+            <aside>
+                <span>Menu:</span>
+                <ul class="m_list">
+                    <li class="menu"><a href="#List1">List 1</a></li>
+                    <li class="menu"><a href="#List2">List 2</a></li>
+                    <li class="menu"><a href="#List3">List 3</a></li>
+                </ul>
+
+                <span>Orders:</span>
+                <ul class="order_list m_list">
+
+                    <li id="order1" class="menu"><a href="#">ORDER [<span style="color:red">X</span>]</a></li>
+                    <li id="order2" class="menu"><a href="#">ORDER [<span style="color:red">X</span>]</a></li>
+                </ul>
+                <a href="checkout.php?">Check out</a>
+            </aside>
+            <div  class="boxList">
+                <div class="date">
+                    <input type="date" name="date" />
+                </div>
+                <div id="List1" class="subBoxList">
+                    <h2>SubList1</h2>
+                    <div class="boxes">
+                        <div id="box1" class="element">
+                           <div class="col-lg-4 col-sm-6">
+								<a href="#" class="portfolio-box">
+									<img src="test1.png" class="img-responsive" alt="test" style="width:100%  !important;">
+									<div class="portfolio-box-caption">
+										<div class="portfolio-box-caption-content">
+											<div class="project-category text-faded">
+												Vegetable Box! Price: $9999
+											</div>
+											<div class="project-name">
+												A healthy alternative!
+											</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                        </div>
+                        <div id="box2" class="element">
+                            box1
+                        </div>
+                        <div id="box3" class="element">
+                            box1
+                        </div>
+                        <div id="box4" class="element">
+                            box1
+                        </div>
+                        <div id="box5" class="element">
+                            box1
+                        </div>
+                        <div id="box6" class="element">
+                            box1
+                        </div>
+                        <div id="box7" class="element">
+                            box1
+                        </div>
+                        <div id="box8" class="element">
+                            box1
+                        </div>
+                    </div>
+                </div>
+
+                <div id="List2" class="subBoxList">
+                    <h2>SubList1</h2>
+                    <div class="boxes">
+                        <div id="box9" class="element">
+                            box1
+                        </div>
+                        <div id="box10" class="element">
+                            box1
+                        </div>
+                        <div id="box11" class="element">
+                            box1
+                        </div>
+                        <div id="box12" class="element">
+                            box1
+                        </div>
+                        <div id="box13" class="element">
+                            box1
+                        </div>
+                        <div id="box14" class="element">
+                            box1
+                        </div>
+                        <div id="box15" class="element">
+                            box1
+                        </div>
+                        <div id="box16" class="element">
+                            box1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- footer div -->
+
+            <div class="footer">
+                <img src="A+.png" alt="a" class="aplus">
+                <table class="tiny1">
+                    <tbody><tr>
+                        <th class="f"><a href="#"> HOME </a></th>
+                        <th class="f"><a href="#"> FAQ</a></th>
+                        <th class="f"><a href="#"> POLICY</a></th>
+                        <th class="f"><a href="#"> CONTACT US</a></th>
+
+                    </tr>
+                    </tbody></table>
+
+            </div>
+
+            <div class="tinyfooter">
+                <table class="tiny">
+                    <tbody><tr>
+                        <th><img src="facebook1.png" alt="facebook"></th>
+                        <th><img src="twitter1.png" alt="twitter"></th>
+                        <th><img src="g+1.png" alt="g"></th>
+                        <th><img src="youtube1.png" alt="youtube"></th>
+                    </tr>
+                    </tbody></table>
+            </div>
+
+        </footer>
+
+    </body>
+</html>
