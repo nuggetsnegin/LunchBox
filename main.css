@@ -1,0 +1,390 @@
+body
+	{
+       margin: 0px;
+       padding: 0px;
+       width: 100%;
+       height: 100%;
+	}
+.body
+	{
+		width:100%;
+	}
+/* headers, links and pharagraph styles */
+h1
+	{
+        font-family: 'Candara';
+        text-align: center;
+        position: relative;
+        left:-50px;
+        font-size: 40px;
+        padding: 4px;
+	}
+h2
+	{
+		font-family: "Candara";
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+		padding: 25px;
+	}
+h6
+	{
+		font-family: "Candara";
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+.h,p
+	{
+		text-align: center;
+		font-family: 'Candara';
+		font-size: 24px;
+	}
+h5
+	{
+		font-family: "Candara";
+		font-size: 25px;
+		font-weight: bold;
+		text-align: center;
+	}
+h3
+	{
+		font-family: "Candara";
+		font-size: 15px;
+	}
+h4
+	{
+		font-family: "Candara";
+		font-size: 20px;
+		font-style: italic;
+		color:#6C504D;
+		text-decoration: underline;
+	}
+
+/*menu bar */
+.nav
+	{
+		background-color:#F1E3D4;
+        font-family: 'Candara';
+        position: fixed;
+      	width: 100%;
+        padding: 2px;
+        z-index: 10;
+	}
+ul 
+	{
+   		list-style-type: none;
+   		margin: 0;
+   		padding: 0;
+   		overflow: hidden;
+   		display: block;
+   		width: 100%;
+	}
+li  
+	{
+		float:right;
+
+	}
+.logo
+	{
+		width:200px;
+		height: 60px;
+		position: relative;
+		left:40px;
+
+	}
+.navlink:link, .navlink:visited 
+	{
+   		 display: block;
+   		 width: 120px;
+   		 font-weight: bold;
+    	 color: black;
+   	 	 text-align: center;
+   		 text-decoration: none;
+   		 text-transform: uppercase;
+   		 padding: 5px;
+	}
+.navlink:hover,.active
+	{
+		background-color: #A58264!important;
+	}
+a
+	{
+
+		text-decoration: none;
+
+	}
+/* stock photo */
+.stockphoto
+	{
+		background-image: url("1stpic4.jpg");
+		background-repeat: no-repeat;
+		height: 660px;
+		background-size:100%;
+	}
+.onImg
+	{
+		height: 60px;
+		width: 200px;
+		position: relative;
+		top:350px;
+		left:300px;
+	}
+.onImg1
+	{
+		height: 100px;
+		width: 400px;
+		margin: 5px;
+		padding: 10px;
+		position: relative;
+		top:150px;
+		left:160px;
+	}
+.button
+	{
+		font-family: 'Candara';
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+	}
+.buttonOn
+	{
+		font-family: 'Candara';
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+	}
+
+/* offers */
+/*.offers
+	{
+		
+	}*/
+.offer
+	{
+		border-color:#e7e6e4;
+		width:200px;
+		height:200px;
+		border-style:dotted;
+		border-color:black;
+		border-width:1px;
+		
+	}
+.centered
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ads */
+.ads1
+	{
+		height: 195px;
+		background-image: url("sandwish1.jpg");
+		background-repeat: no-repeat;
+		margin: 3px;
+		padding: 20px;
+		background-size:100%;
+		
+	}
+.ads2
+	{
+		
+		height: 195px;
+		background-image: url("pancake.jpg");
+		background-repeat: no-repeat;
+		margin: 3px;
+		padding: 20px;
+		background-size:100%;
+	}
+.ads3
+	{
+		
+		height: 195px;
+		background-image: url("soup2.jpg");
+		background-repeat: no-repeat;
+		margin-right: 3px;
+		padding: 20px;	
+		background-size:100%;
+	}
+.ads11
+	{
+		position: relative;
+		left: 100px;
+		background-color: #B8A49D;
+		width: 200px;
+	}
+.ads21
+	{
+		position: relative;
+		left: 100px;
+		background-color: #CFB38B;
+		width: 200px;
+	}
+.ads31
+	{
+		position: relative;
+		left: 100px;
+		background-color: #e7e6e4;
+		width: 200px;
+	}
+/* what is inside */
+.inside
+	{
+		margin-top: 3px;
+	}
+.inside1
+	{
+		width:100%;
+	}
+
+/* how to subscribe */
+.howto
+	{
+		border-style: dotted;
+		border-color:#F1E3D4;
+		border-width:1px;
+		margin: 0px;
+	}
+.howimg
+	{
+		position: relative;
+		left:30%;
+	}
+.howImg1
+	{
+		height: 320px;
+		width: 320px;
+		padding: 0px;
+		margin: 0px;
+	}
+/* Join us today */
+.join
+	{
+		height: 200px;
+		background-color: #6C504D;
+	}
+input
+	{
+		padding: 10px;
+		
+		font-size: 20px;
+		font-family: "Candara";
+	}
+
+/*footer*/
+.tinyfooter
+	{
+		background-image: url("footer1.jpg");
+		height: 40px;
+	}
+.footer
+	{
+		height: 80px;
+		border-style: dotted;
+		border-color: #e7e6e4;
+		border-width:1px;
+		background-image: url("footer1.jpg");
+	}
+.tiny
+	{
+		position: relative;
+		left:70px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+.tiny1
+	{
+		position: relative;
+		left:60px;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+.f
+	{
+		padding: 20px;
+		font-family: "Candara";
+		font-size: 20px;	
+	}
+.aplus
+	{
+		float:right;
+	}
+/* sign up page */ 
+.sign
+{
+	background-image: url("sign.jpg");
+	min-height:810px;
+	background-size:100%;
+
+}
+.signup
+	{
+		background-color: #e7e6e4;
+		opacity: 0.8;
+		margin-right: 1%;
+		margin-left: 1%;
+		padding: 5px;
+		padding-bottom:25px;
+		position:relative;
+		top: 140px;
+		border-color: #6C504D;
+		border-width: 2px;
+		border-style: double;		
+		width:80%;
+	}
+.signup1
+	{
+		position: relative;
+		margin-right: 1%;
+		margin-left: 1%;
+		padding-left: 1%;
+		padding-right: 1%;		
+	}
+.form,select
+	{
+		padding: 3px;
+		font-size: 16px;
+		font-family: "Candara";
+		opacity: 1.0;
+		border-color: #F1E3D4;
+	}
+label
+	{
+		font-family: "Candara";
+	}
+.signButton
+	{
+		font-family: 'Candara';
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+        position: relative;
+        left:100px;
+        background-color: #CFB38B;
+	}
+/* sign in page */ 
+.signin
+	{
+		background-color: #e7e6e4;
+		opacity: 0.8;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 5px;
+		padding-bottom:25px;
+		position:relative;
+		top: 250px;
+		border-color: #6C504D;
+		border-width: 2px;
+		border-style: double;
+		
+		//box-shadow: 5px 5px 2px #CFB38B;
+		width:50%;
+	}
+
+.signintable
+	{	
+		margin:0 auto;
+	}
